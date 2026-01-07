@@ -1,8 +1,18 @@
 #!/bin/bash
 
+# Get input to create username
 echo "enter username"
 read uname
-sudo useradd -m $uname
+
+# Check if user exist already
+if id "$uname" &>/dev/null; then
+	echo "User $uname already exists"
+	exit 1
+else
+	sudo useradd -m "$uname"
+	echo "User $uname created successfully"
+
+fi
 
 if ! id "$uname" &>/dev/null; then
 	echo "user $uname does not exist"
