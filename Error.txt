@@ -1,0 +1,4 @@
+03/22 08:53:38 ERROR  :......router_forward_getOI:         route handle:   7f5251c8
+03/22 08:53:38 ERROR  :.......mailslot_send: sending to (9.67.116.99:0)
+03/22 08:54:24 ERROR  :......router_forward_getOI:         out inf:   9.67.116.98
+03/22 08:54:53 ERROR  :..mailslot_sitter: process received signal SIGTERM
